@@ -1,0 +1,101 @@
+Avant de se lancer dans le code 
+
+=> Présentation ?? SQL ???
+
+Projet en information => grande quantité d'information / données / de variables pour pouvoir créer votre projet informatique 
+
+=> créer des variables en PHP 
+
+// variable simple => string
+$etudiant = "Alain DOE" ;
+
+// variable qui contient plusieurs valeurs => tableau (array)
+$etudiants = [
+    "Alain",
+    "Béatrice",
+    "Céline" ,
+    "Denis"
+];
+
+// ecole => 10 classes qui contiennent chacunes 20 étudiants 
+
+$ecole = [
+    [
+        "Alain",
+        
+    ],
+    [
+        "Zorra",
+        "Béatrice"
+    ],
+    [],
+];
+// Mais plus vous devez stocker des concepts qui contiennent des grosses quantités de valeur 
+// les variables de base => string / array fonctionnent MAIS pas très pratique à manipuler 
+
+// ajouter un nouvel étudiant 
+// supprimer un étudiant 
+// réorganiser l'ordre des classes
+// prendre un étudiant et le mettre dans une autre classes
+// rechercher dans ma variable => est ce que j'ai un étudiant dont le prénom est Charles 
+
+
+=> année 70 ce problème 
+=> Apollo fusée 
+
+=> besoin d'avoir un système qui permet de stocker / modifier / supprimer / rechercher des données rapidement
+de manière fiable 
+
+=> créer le concept de base de données => enorme variable 
+
+base de données === énorme variable 
+
+Base de données => logiciel qui va être découpé en 2 parties 
+Données => les informations que vous voulez stocker 
+SGBD => Système de Gestion de Base de Données logiciel qui va être en charge de réaliser toutes les opérations de stocker / modifier / supprimer / update / insertion / rechercher sur les données / filtrage ....
+
+
+SQL => POur communiquer avec le SGBD => effectuer les traitements sur les datas
+
+SQL => Structured Query Language
+
+Query => Requête / demande => Langage qui permet de réaliser des demandées
+
+------------
+
+coder à la main html / css / php / sql / javascript => maitrise total projet 
+cms => Wordpress installer un site internet qui permet de gérer un site internet 
+       - installer 
+       - installer et le modifier 
+wix => saas => créer un compte sur un site internet / num de carte bleue
+       - créer un compte 
+
+devis => 2000 €
+payer un abonnement mensuel de 50 € 
+
+
+$toto => SQL => SGBD => 1234.3 ; 
+
+SQL => beaucoup de mot clé 
+
+plusieurs SGBD 
+
+SGBD payant (utilisable uniquement si vous avez un licence)
+SGBD gratuit (télécharger et utiliser sans payer un licence)
+
+Présenter / utiliser des SGBD open source / sans licence
+MySQL / MariaDB 
+Sqlite 
+
+------------
+
+site internet 
+
+Page d'accueil 
+
+50 articles => titre / description / auteur / dt_publication 
+
+=> facilité la vie pour manipuler rapidement plein d'information de manière FIABLE 
+=> sécuriser par défaut !!! 
+
+// rdv 10h55 @ toute suite !!

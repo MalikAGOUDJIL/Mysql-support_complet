@@ -1,0 +1,38 @@
+
+
+récupérer la requête CREATE qui a été généré pour créer n'importe quelle table dans MySQL Maria 
+
+SHOW CREATE TABLE exo3 ;
+
+
+CREATE TABLE `exo3` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(50) NOT NULL,
+  `description_complete` mediumtext NOT NULL,
+  `etat` tinyint(1) NOT NULL,
+  `dt_mis_a_jour` datetime NOT NULL,
+  `age` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+-------------
+
+utilisant requete SQL 
+
+INSERT INTO exo3 
+(nom , description_complete , etat , dt_mis_a_jour , age)
+VALUES 
+("Alain" , "lorem ipsum long" , TRUE , "2022-08-18 12:26:00" , 15);
+
+Formulaire 
+
+INSERT 
+SELECT WHERE 
+UPDATE
+DELETE 
+
+=> relation entre les tables / jointures 
+
+=> rdv 13h35 @ toute suite bon app !!!!!!!!!
+

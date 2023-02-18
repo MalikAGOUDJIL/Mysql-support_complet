@@ -1,0 +1,24 @@
+INSERT
+SELECT 
+
+la requête SQL est exécutée à 100% ou rien (message erreur)
+
+code PHP => ; ["", 12 12] exécutée à 100% ou rien (message erreur)
+
+HTML et CSS Javascript => exécution jusqu'à l'erreur 
+
+ajouter des lignes dans la table exo3 
+INSERT INTO exo3
+(nom , description_complete, etat , dt_mis_a_jour , age)
+VALUES 
+("")
+
+----------------
+
+formulaire => qui permet de se concentrer uniquement sur les valeurs à saisir
+
+je veux ajouter une nouvelle ligne dans la table exo1 
+
+Cas pratique 
+ajouter deux lignes d'enregistrement dans la table exo1 
+ajouter un ligne d'enregistrement dans la table etudiant2

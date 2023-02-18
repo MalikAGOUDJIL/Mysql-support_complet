@@ -1,0 +1,38 @@
+support : 
+
+url : https://formation.webdevpro.net/sql/
+login : sql
+mdp : sql
+
+note des courses => discord 
+https://discord.gg/XSJ2ajJd
+
+--------------
+
+projet information => données 
+
+$variable = "données";
+
+$tableau = ["lundi" , "mardi"];
+
+$bdd = logiciel spécialisé dans le stockage de données 
+       data + sgbd (moteur de la base de données )
+
+tableaux ==== sgbd <===== SQL Structed Query Langage
+
+sgbd existent plusieurs 
+
+pendant les 3 jours d'initiation à SQL => 
+
+MySQL / MariaDB 
+SQLITE 
+
+=> SQLITE => dans Visual Studio Code => extension => installation du SGBD 
+
+créer le fichier xxxxxxxxxxx.db // xxxxxxxxxxxx.sqlite
+
+clique droit sur le fichier xxxxxxxxxxx.db > open data base 
+
+
+
+

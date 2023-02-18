@@ -1,0 +1,85 @@
+CREATE TABLE exo1(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    titre VARCHAR(100),
+    dt_publication DATE ,
+    `like` INT
+);
+
+formulaire de création de table 
+menu déroulant Type => l'ensemble des types utilisables pour créer des colonnes dans vos tables 
+
+INT => chiffre entier 
+VARCHAR => chaine de caractères courte maximum 255 lettres 
+TEXT => chaine de caractères courte longue 65000 caractères 
+DATE  => aaaa-mm-jj 
+
+section numérique
+    sous section => entier 
+                 => chiffre à virgule
+                 => chiffres spéciaux
+section date et heure 
+    aaaa-jj-mm DATE
+    aaaa-jj-mm hh:mm:ss DATETIME
+    hh:mm:ss TIME
+    grand nombre TIMESTAMP => nombre de secondes entre maintenant et le 1er janvier 1970
+
+section chaine de caractères
+    VARCHAR
+    TEXT 
+
+section pour les données de type géographique 
+
+section JSON 
+
+=> mySQL / MariaDB => vous avez plus de choix en terme de précision pour stocker vos données 
+=> plus vos types sont proches de la réalité de vos besoins en terme de stocker de données => les données vont être stockées de manières plus optimal
+
+=> petit projet 20000 lignes => impact est faible 
+
+=> gros projet avec 1 000 000 000 lignes => besoin d'ajouter des disques dur en plus pour stocker vos données 
+
+
+
+10000000 => INT 
+=> TINYINT  => 10000000
+
+INSERT DANS la table (variable) la valeur "yyyy" => SGBD
+modifier le type des valeurs dans structure de la table table (variable) 
+
+$php = [1200,1234];
+
+
+cas pratique :
+créer une nouvelle table exo3 dans la base demo 
+clé primaire id 
+nom maximum de 50 lettres 
+description plus de 255 lettres moins de 16 millions de lettres 
+etat publié / non publié 
+dt_mis_a_jour aaaa-mois-jj hh:mm:ss 
+age => 0 et 120 chiffre entier 
+ 
+=> système visuel de formulaire proposé par phpmyadmin 
+
+
+-----------------
+
+erreur / modifier la structure de ma table SQLITE 
+
+DROP TABLE exo3 ;
+
+CREATE TABLE exo3(
+
+)
+
+MariaDB / MySQL 
+
+ALTER TABLE 
+
+modifier nom de ma colonne / changer le type 
+
+ALTER TABLE `exo3` 
+CHANGE `description` `description_complete` MEDIUMTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL; 
+
+
+
+

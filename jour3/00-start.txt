@@ -1,0 +1,132 @@
+SQLITE => logiciel SGBD 
+
+juste installer un plugin / une extension sur Visual Studio Code 
+créer un fichier qui finit par  .db ou .sqlite 
+open database 
+requête SQL 
+
+TABLE => CRUD 
+CREATE TABLE 
+Read USE (existe sur mySQL mais n'existe pas sur SQLITE)
+Update ALTER (existe sur mySQL mais n'existe pas sur SQLITE)
+Delete DROP
+
+Enregistement => CRUD 
+INSERT INTO VALUES 
+SELECT FROM WHERE ORDER BY LIMIT   
+    AS  TRUE FALSE      BETWEEN IN  ASC DESC 
+    YEAR() (existe sur mySQL mais n'existe pas sur SQLITE)
+UPDATE
+DELETE 
+
+=> MySQL / MariaDB 
+=> PHP 
+
+=>XAMPP / WAMP (server local)
+
+XAMPP => Cross Apache MySQL PHP Perl
+WAMP => Windows Apache MySQL PHP
+
+=> relations entre les tables / jointure 
+=> clé primaire 
+=> clé secondaire 
+
+------------------
+
+Lancer XAMPP ou WAMP // Mac OS => MAMP
+
+Lancer deux services Apache et MySQL 
+
+phpMyAdmin => site internet qui est fournit en même temps que le SGBD 
+permet de visualiser facilement les contenus des tables 
+donne un accès à une console (endroit où écrire du code SQL)
+client Graphique // mais en plus vous avez avoir des formulaires qui vont générer pour vous des requêtes SQL 
+
+
+windows http://localhost/phpmyadmin
+mac OS http://localhost:8888/phpmyadmin
+
+
+=> Visual Studio Code => prendre des notes 
+
+=> créer une base de données vide sur mySQL /phpMyAdmin
+
+=> Maison > onglet Base de données 
+
+nom de la base de données => demo 
+encodage => utf8mb4_general_ci
+cliquer sur le bouton créer 
+
+=> déterminer comment les caractères (lettres) de toutes les langues doivent être enregistrés dans le disque dur 
+1 lettre = octet sur le disque dur => parfait si l'alphabet contient uniquement 256 caractères
+utf8 norme que va déterminer combien d'octet est nécessaire en fonction de la langue 
+
+utf8mb4_general_ci => unicode 
+
+
+----------------
+
+créer des tables vides 
+
+=> SQL 
+créer une table dans la base de données demo 
+nom etudiant qui contient 4 colonnes 
+- clé primaire id
+- prenom texte de 20 caractères
+- age chiffre entier par défaut 0
+- dt_creation aaaa-mm-jj par défaut aujourd'hui
+
+-- XAMPP 
+CREATE TABLE etudiant(
+ id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ prenom VARCHAR(20),
+ age INT DEFAULT 0 ,
+ dt_creation DATE DEFAULT CURRENT_DATE()
+)
+
+
+cas pratique créer une nouvelle table dans la base de données demo
+nom de la table exo1
+clé primaire id
+titre chaine de caractère maximum de 100 lettres 
+dt_publication aaaa-mm-jj 
+like chiffre entier 
+
+CREATE TABLE exo1(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    titre VARCHAR(100),
+    dt_publication DATE ,
+    `like` INT
+);
+
+DROP TABLE exo1 ;
+
+CREATE 
+
+SELECT 
+
+WHERE colLIKE 
+
+
+=> formulaire 
+
+
+cas pratique 2
+créer une nouvelle table exo2 dans la base demo 
+
+clé primaire id 
+titre chaine de caractères de 200 lettres maximum 
+texte chaine de caractères de 200 lettres maximum 
+dt_publication aaaa-mm-jj 
+nb_commentaire chiffre entier 
+
+utiliser le mode visuel (via le système de formulaire founit par phpMyAdmin) pour créer cette table
+
+astuce => bouton Exécuter à côté du nom de la table pour ajouter plus de colonnes 
+
+
+
+
+
+
+

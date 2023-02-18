@@ -1,0 +1,49 @@
+-- pour modifier le contenu d'une ligne dans une table 
+
+faire une sauvegarde avant modification
+
+CREATE TABLE sauvegarde_exo1 AS SELECT * FROM exo1 ;
+
+requete 
+
+-- modifier le contenu d'une cellule d'une ligne de la table exo1 ;  
+
+UPDATE exo1 
+SET titre = "titre modifié"
+WHERE id = 10;
+
+-- Cas n° 1
+-- modifier le contenu de la dt_publication de l'exo1 ayant l'id 3 
+-- mettre le valeur "2021-01-01"
+
+UPDATE exo1
+SET dt_publication = "2021-01-01"
+WHERE id = 3 ;
+
+
+-- Cas n° 2
+-- augmenter le nombre de like de + 4 pour les exo1 qui ont l'id 2,4,6
+UPDATE exo1
+SET `like` = `like` + 4 
+WHERE id IN (2,4,6) ;
+
+
+
+
+cas 1
+ UPDATE `exo1`SET `dt_publication`= "2021-01-01" WHERE id = 3
+
+cas 2
+ UPDATE `exo1`SET `like`= `like` + 4 WHERE id IN (2,4,6)
+
+------------------------
+
+DELETE FROM exo1 WHERE id = 3 ;
+
+=> cas pratique
+Supprimer tous les exo1s qui sont un nombre de like compris entre 0 et 5
+
+DELETE FROM exo1
+WHERE `like` BETWEEN 0 AND 5 ;
+
+requete SQL / bouton dans phpMyAdmin

@@ -1,0 +1,6 @@
+nom,poids,description,id_tva,catégorie,prix ht,image,caractéristique
+Produit 1,0.8,lorem ipsum,1,Test,15,http://localhost/prestashop/tmp/prod1.jpg,label:bio
+Produit 2,0.4,lorem ipsum,1,Test,20,http://localhost/prestashop/tmp/prod2.jpg,label:bio
+Produit 3,0.2,lorem ipsum,1,Test,40,http://localhost/prestashop/tmp/prod3.jpg;http://localhost/prestashop/tmp/prod3-bis.jpg,label:made in france
+Produit 4,0.1,lorem ipsum,1,Test,30,,label:made in france
+Produit 5,0.9,lorem ipsum,1,Test,80,,label:bio

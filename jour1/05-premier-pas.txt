@@ -1,0 +1,28 @@
+
+Découvrir un SGBD => SQlite 
+très très simple à mettre oeuvre 
+
+ET COMPRENDRE ensemble comment fonctionne le SQL 
+
+=> extensions > rechercher "sqlite" > installer le plugin Sqlite de alexcvzz
+
+d'installer un SGBD de SQLITE 
+
+créer un nouveau fichier 05-toto-tata.db 
+créer un nouveau fichier 05-toto-tata.sqlite
+
+( l'extension est importante !! )
+
+clique droit sur le fichier > open database  > section SQLITE Explorer >
+
+créer une base de données vide 
+
+base de données est remplie par des TABLES 
+
+créer une table etudiants dans la base de données 05-bdd.db
+
+langague => SQL 
+
+
+
+

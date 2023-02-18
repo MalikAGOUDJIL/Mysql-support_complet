@@ -1,0 +1,40 @@
+créer un nouveau dossier intitulé "jour2"
+fermez la base de données créée hier "05-bdd.db" (clique droit > close database)
+
+créer une base une base de données 
+
+créer / détruire des tables 
+CREATE TABLE nom_table() ;
+DROP TABLE nom_table ;
+
+les colonnes d'une tables => schéma de la table 
+- nom_colonne INT / FLOAT / VARCHAR() / TEXT / DATE / DATETIME / BOOLEAN  
+              NOT NULL 
+              DEFAULT 
+
+- colonne spéciale => distinguer les lignes dans une table => clé primaire / primary key 
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT 
+
+- ajouter / insérer des lignes dans votre table 
+
+INSERT INTO nom_table 
+(col1 , col2 , col3 , col4 , col5 ) /* pas de guillemet sur les noms de colonnes */
+VALUES 
+( "text" , "2022-08-17" , TRUE , 10 , 1.2 ); /* valeurs */
+
+
+créer un nouveau fichier "bdd.db" dans le dossier "jour2"
+
+objectif de cette base de données est de gérer un blog 
+site internet dans lequel l'auteur va pouvoir écrire des articles 
+
+créer une première table articles 
+clé primaire 
+titre texte maximum de 200 lettres 
+contenu texte > 255 lettres
+etat publié / brouillon (que 2 états possibles)
+nb_commentaire chiffre entier par défaut vaut 0 
+dt_publication date au format aaaa-mm-jj 
+
+
+

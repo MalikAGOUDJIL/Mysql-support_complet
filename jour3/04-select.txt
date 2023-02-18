@@ -1,0 +1,109 @@
+créer les requêtes SQL suivantes :
+
+-- 1 afficher la liste de tous les exo1s qui ont un nombre de like > 30 
+
+SELECT * 
+FROM exo1
+WHERE `like` > 30 ;
+
+-- 2 afficher la liste de tous les exo1s qui ont un nombre de like entre 5 et 40 inclus
+
+SELECT * 
+FROM exo1
+WHERE `like` BETWEEN 5 AND 40 ;
+
+SELECT * 
+FROM exo1
+WHERE `like` >= 5 AND `like` <= 40 ;
+
+-- 3 afficher la liste de tous les exo1s dont le titre contient le mot PHP
+
+SELECT * 
+FROM exo1
+WHERE titre LIKE "%PHP%" ;
+
+SELECT * 
+FROM exo1
+WHERE titre LIKE "%php%" ;
+
+-- 4 afficher la liste de tous les exo1s dont le titre contient le mot PHP ou le mot HTML
+
+SELECT * 
+FROM exo1
+WHERE titre LIKE "%PHP%" OR titre LIKE "%HTML%";
+
+-- 5 afficher la liste de tous les exo1s dont le titre contient le mot PHP et qui ont été publié avant le 16 Aout 2022
+
+SELECT * 
+FROM exo1
+WHERE titre LIKE "%PHP%" AND dt_publication < "2022-08-16";
+
+dt_publication < "2022-08-16"
+
+
+-----
+
+SELECT * FROM `exo1` WHERE likes > 30;
+SELECT * FROM `exo1` WHERE likes BETWEEN 5 AND 30;
+SELECT * FROM `exo1` WHERE titre LIKE "%PHP%";
+SELECT * FROM `exo1` WHERE titre LIKE "%PHP%" OR titre LIKE  "%HTML%";
+SELECT * FROM `exo1` WHERE titre like "%PHP%" AND dt_publication < "2022-08-16"
+
+
+-----------
+
+cas pratique 
+
+/* 1 récupérer la liste de tous les exo1s publié entre le 1er Aout 2022 et le 14 Aout 2022
+renommer la colonne titre => titre de l'article 
+renommer la colonne dt_publication => publié le */
+
+SELECT titre AS `titre de l'article` , dt_publication AS `publié le`
+FROM exo1 
+WHERE dt_publication BETWEEN "2022-08-01" AND "2022-08-14" ;
+
+/* 2 récupérer la liste de tous les exo1s ayant un nombre de like inférieur à 30
+renommer la colonne titre => titre de l'article 
+renommer la colonne dt_publication => date 
+renommer la colonne like => nb like 
+trier dans l'ordre décroissant (grand au plus petit) en fonction de la colonne like  */
+
+SELECT titre AS `titre de l'article` , dt_publication AS `date` , `like` AS `nb like`
+FROM exo1
+WHERE `like` < 30 
+ORDER BY `like` DESC ;
+
+/* 3 récupérer la liste de tous les exo1s dont le nombre de like est comprise entre 5 et 20 et qui contiennent le mot CSS dans la colonne titre */
+
+SELECT *
+FROM exo1 
+WHERE `like` BETWEEN 5 AND 20 AND titre LIKE "%CSS%" ;
+
+
+-----------
+
+SELECT titre AS `titre de l'article`, dt_publication AS `publie le`
+FROM `exo1`
+WHERE dt_publication BETWEEN "2022-08-01" AND "14-08-2022";
+
+
+SELECT titre AS titre, dt_publication AS `date`,`like` AS `nb like`
+FROM `exo1`
+WHERE
+ORDER BY `like` DESC;
+
+SELECT *
+FROM `exo1`
+WHERE `like` BETWEEN 5 and 20 AND `titre` LIKE "%CSS%" ;
+
+
+update 
+Delete 
+=> relation entre les database
+=> 16h50 => qcm 10 min 
+
+
+
+ALTER TABLE => modifier le nom d'un colonne / type définitivement 
+
+SELECT col AS `autre nom` FROM table => modifier le nom de la colonne dans l'affichage (pas dans la table )
